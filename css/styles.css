@@ -13300,6 +13300,14 @@ section.resume-section .resume-section-content {
     .encabezado-paneles h2 {
         font-size: 2rem;
     }
+
+    /* Efecto al tocar la pantalla (Tap) */
+    .panel-item:active {
+        transform: scale(0.96); /* Hace un ligero efecto de "hundimiento" al presionarlo */
+        transition: transform 0.1s ease; /* Transición ultra rápida para que se sienta responsivo */
+        box-shadow: inset 0 0 20px rgba(0,0,0,0.5); /* Oscurece un poco los bordes al tocar */
+        z-index: 10;
+    }
 }
 
 /* =========================================
