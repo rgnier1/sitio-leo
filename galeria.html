@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    <title>Galería - Leo Ramirez</title>
+    <meta name="description" content="Galería fotográfica del trabajo y los recorridos de Leo Ramirez en Melchor Ocampo.">
+    
+    <!-- Font Awesome Icons -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <!-- Estilos personalizados -->
+    <link href="css/styles.css" rel="stylesheet" />
+    
+    <!-- Efecto especial solo para las fotos de esta galería -->
+    <style>
+        .galeria-img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 8px;
+            object-fit: cover;
+            aspect-ratio: 4/3; /* Mantiene todas las fotos del mismo tamaño */
+        }
+        .galeria-img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación Lateral -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">
+            <span class="d-block d-lg-none">Galería</span>
+            <span class="d-none d-lg-block profile-img">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/leo_fondo.jpeg" alt="Leo Ramirez" />
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-arrow-left me-2"></i>Volver al Inicio</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#recorridos">Caminando las Calles</a></li>
+                <li class="nav-item"><a class="nav-link" href="#eventos">Eventos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container-fluid p-0">
+
+        <!-- Seccion: Recorridos -->
+        <section class="resume-section" id="recorridos">
+            <div class="resume-section-content">
+                <span class="subheading text-primary">04. Galería</span>
+                <h2 class="mb-5">Caminando Melchor Ocampo</h2>
+                <p class="lead mb-4">El verdadero trabajo se hace en las calles, escuchando a las familias y conociendo de primera mano las necesidades de nuestra comunidad.</p>
+                
+                <!-- Cuadrícula de fotos (3 columnas en PC, 1 en Celular) -->
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <img src="assets/img/galeria1.jpg" class="img-fluid galeria-img w-100 shadow-sm" alt="Recorrido 1">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="assets/img/galeria2.jpg" class="img-fluid galeria-img w-100 shadow-sm" alt="Recorrido 2">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="assets/img/galeria3.jpg" class="img-fluid galeria-img w-100 shadow-sm" alt="Recorrido 3">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="assets/img/galeria4.jpg" class="img-fluid galeria-img w-100 shadow-sm" alt="Recorrido 4">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="assets/img/galeria5.jpg" class="img-fluid galeria-img w-100 shadow-sm" alt="Recorrido 5">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="assets/img/galeria6.jpg" class="img-fluid galeria-img w-100 shadow-sm" alt="Recorrido 6">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="m-0" />
+
+        <!-- Seccion: Eventos -->
+        <section class="resume-section" id="eventos">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Eventos y Reuniones</h2>
+                
+                <!-- Cuadrícula de fotos (2 columnas en PC para fotos más grandes) -->
+                <div class="row g-4">
+                    <div class="col-12 col-md-6">
+                        <img src="assets/img/evento1.jpg" class="img-fluid galeria-img w-100 shadow-sm" alt="Evento 1">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="assets/img/evento2.jpg" class="img-fluid galeria-img w-100 shadow-sm" alt="Evento 2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

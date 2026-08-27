@@ -12981,14 +12981,14 @@ section.resume-section .resume-section-content {
   /* 1. Fondo de la sección Inicio con difuminado a blanco hacia abajo */
   #inicio {
     /* CAMBIO: Se cambió "cover" por "100% auto" y ajustamos un poco el inicio del blanco al 55% */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 1) 55%), url('../assets/img/leo_fondo.jpeg') center top / 150% auto no-repeat !important;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 1) 55%), url('../assets/img/leo_fondo5.jpg') right top / 120% auto no-repeat !important;
     background-color: #ffffff !important;
     /* Respaldo de color */
     flex-direction: column !important;
     justify-content: flex-end !important;
     align-items: center !important;
     padding-left: 0 !important;
-    padding-bottom: 4rem !important;
+    padding-bottom: 8rem !important;
   }
 
   /* 2. Contenedor de los textos y botón */
@@ -13150,20 +13150,49 @@ section.resume-section .resume-section-content {
 /* =========================================
    SECCIÓN DE PANELES / MENÚ INTERACTIVO
    ========================================= */
-/* =========================================
-   SECCIÓN DE PANELES / MENÚ INTERACTIVO
-   ========================================= */
-.seccion-paneles {
-  width: 100%;
-  background-color: #f8f9fa;
-  overflow: hidden;
+.seccion-explorar {
+    width: 100%;
+    min-height: 100vh; /* Ocupa toda la pantalla para que no se asome el buzón */
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra todo verticalmente */
+    padding: 40px 0; /* Da un respiro arriba y abajo */
+}
+
+/* Textos arriba de los paneles */
+.encabezado-paneles h2 {
+    font-family: "Saira Extra Condensed", sans-serif;
+    color: #66001a;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 0.2rem;
+}
+.encabezado-paneles p {
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
 }
 
 .paneles-grid {
+    display: flex;
+    width: 100%;
+    height: 520px; /* ¡Regresamos a la altura perfecta y proporcional! */
+}
+
+/* Texto debajo de los paneles */
+.pie-paneles {
+    margin-top: 2rem;
+    color: #888;
+    font-size: 0.95rem;
+}
+
+
+/*.paneles-grid {
   display: flex;
   width: 100%;
   height: 520px;
-}
+}*/
 
 .panel-item {
   position: relative;
@@ -13256,17 +13285,124 @@ section.resume-section .resume-section-content {
    ADAPTABILIDAD MÓVIL (RESPONSIVE)
    ========================================= */
 @media (max-width: 991px) {
-  .paneles-grid {
-    flex-direction: column;
-    height: auto;
-  }
-  
-  .panel-item {
-    height: 320px;
-    padding: 30px 20px;
-  }
-  
-  .panel-item:hover {
-    flex: 1;
-  }
+    .seccion-explorar {
+        min-height: auto;
+        padding: 40px 0;
+    }
+    .paneles-grid {
+        flex-direction: column;
+        height: auto;
+    }
+    .panel-item {
+        height: 320px;
+        padding: 30px 20px;
+    }
+    .encabezado-paneles h2 {
+        font-size: 2rem;
+    }
+}
+
+/* =========================================
+   SECCIÓN DE CONTACTO OSCURO
+   ========================================= */
+.contacto-oscuro {
+    background-color: #0a0a0a; /* Fondo casi negro */
+    color: #ffffff;
+    overflow: hidden;
+}
+
+/* --- Columna de la Frase --- */
+.quote-box {
+    border-right: 2px solid #8B0000; /* Línea roja separadora */
+    padding-right: 2rem;
+}
+.quote-icon {
+    font-size: 3rem;
+    color: #8B0000;
+    margin-bottom: 10px;
+}
+.quote-text {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+.text-resaltado {
+    color: #8B0000;
+    font-weight: 500;
+}
+.firma-candidato {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    color: #cca461; /* Dorado elegante */
+    margin-top: 10px;
+}
+
+/* --- Columna del Formulario --- */
+.contacto-titulo {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    color: #ffff;
+}
+.contacto-subtitulo {
+    font-size: 0.85rem;
+    color: #aaaaaa;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos de los inputs oscuros */
+.input-oscuro {
+    background-color: transparent !important;
+    border: 1px solid #333333 !important;
+    color: #ffffff !important;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    padding: 10px 15px;
+}
+.input-oscuro::placeholder {
+    color: #666666;
+}
+.input-oscuro:focus {
+    border-color: #8B0000 !important;
+    box-shadow: none !important;
+}
+
+/* Botón Enviar */
+.btn-enviar-oscuro {
+    background-color: #6a1a24;
+    color: #ffffff;
+    border: none;
+    padding: 8px 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+.btn-enviar-oscuro:hover {
+    background-color: #4a1219;
+    color: #ffffff;
+}
+
+/* --- Mascota --- */
+.mascota-contacto {
+    max-height: 250px;
+    object-fit: contain;
+}
+
+/* --- Adaptabilidad Móvil --- */
+@media (max-width: 991px) {
+    .quote-box {
+        border-right: none;
+        border-bottom: 2px solid #8B0000;
+        padding-right: 0;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .mascota-contacto {
+        margin-top: 2rem;
+        max-height: 200px;
+    }
 }
