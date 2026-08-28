@@ -494,6 +494,15 @@ section.resume-section .resume-section-content {
    8. MEDIA QUERIES RESPONSIVAS
    ========================================= */
 
+/* Para pantallas grandes / monitores / Mac */
+@media (min-width: 1200px) {
+  .mascota-flotante {
+    max-width: 320px;
+    /* Un tamaño proporcional para pantallas amplias */
+    right: 40px;
+  }
+}
+
 /* Dispositivos Móviles y Tablets pequeñas */
 @media (max-width: 991px) {
   #inicio {
@@ -704,10 +713,10 @@ section.resume-section .resume-section-content {
     background-color: rgba(255, 255, 255, 0.85);
     padding: 15px;
     border-radius: 15px;
-    max-width: 200px; 
+    max-width: 200px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(5px);
-    width: 100% ;
+    width: 100%;
   }
 
   .titulo-candidato {
