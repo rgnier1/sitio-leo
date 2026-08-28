@@ -807,3 +807,167 @@ section.resume-section .resume-section-content {
   }
 
 }
+
+/* =========================================
+   4. PÁGINA: HISTORIA PERSONAL (historia.html)
+   ========================================= */
+
+   /* =========================================
+   COLORES GLOBALES Y UTILIDADES
+   ========================================= */
+.text-gold {
+    color: #cca461 !important;
+}
+
+/* =========================================
+   ENCABEZADO DE HISTORIA
+   ========================================= */
+.kiosco-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    /* Difuminado suave hacia la izquierda para mezclarse con el fondo */
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 100%);
+    opacity: 0.8;
+}
+
+/* =========================================
+   LÍNEA DE TIEMPO VERTICAL (TIMELINE)
+   ========================================= */
+.timeline-container {
+    position: relative;
+    padding-left: 2rem; /* Espacio para la línea */
+}
+
+/* La línea vertical dorada */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 8px; /* Posición exacta de la línea */
+    width: 2px;
+    background-color: #cca461;
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 5rem; /* Separación entre bloques */
+}
+
+/* El círculo dorado de cada ítem */
+.timeline-dot {
+    position: absolute;
+    left: -2rem; /* Ajuste para que caiga exactamente sobre la línea */
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #cca461;
+    border: 4px solid #fbfbfb; /* Borde del color de fondo para resaltar */
+}
+
+/* =========================================
+   TARJETAS Y ELEMENTOS INTERNOS
+   ========================================= */
+.info-card {
+    transition: transform 0.2s ease;
+}
+.info-card:hover, .value-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+
+/* Línea de progreso académico horizontal */
+.academic-timeline {
+    position: relative;
+}
+.academic-line-bg {
+    position: absolute;
+    top: 25px;
+    left: 10%;
+    width: 80%; /* Limita el ancho exacto para que frene en el último icono */
+    height: 2px;
+    background-color: #66001a; /* Color guinda actualizado */
+    z-index: 1;
+}
+.academic-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #66001a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    z-index: 2;
+    border: 3px solid #fbfbfb;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+@media (max-width: 991px) {
+    .timeline-container {
+        padding-left: 1.5rem;
+    }
+    .timeline-container::before {
+        left: 4px;
+    }
+    .timeline-dot {
+        left: -1.7rem;
+        width: 16px;
+        height: 16px;
+    }
+    /* Ocultar la línea horizontal en móviles porque no cabe, apilar los iconos */
+    .academic-line-bg {
+        display: none;
+    }
+}
+
+/* =========================================
+   PÁGINA: GALERÍA
+   ========================================= */
+
+.galeria-item {
+    cursor: pointer;
+    background-color: #000; /* Fondo negro por si la imagen tarda en cargar */
+}
+
+/* Forzamos que las imágenes tengan la misma altura para mantener la cuadrícula perfecta */
+.galeria-item img {
+    height: 280px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Efecto de zoom al pasar el mouse */
+.galeria-item:hover img {
+    transform: scale(1.08);
+}
+
+/* Capa superpuesta con degradado guinda */
+.galeria-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    /* Degradado de guinda oscuro a transparente */
+    background: linear-gradient(to top, rgba(102, 0, 26, 0.95), transparent);
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.3s ease;
+}
+
+/* Mostrar la capa al hacer hover */
+.galeria-item:hover .galeria-overlay {
+    opacity: 1;
+}

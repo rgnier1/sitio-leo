@@ -104,7 +104,7 @@
              SECCIÓN: INICIO (Portada)
              ========================================= -->
 
-             <section id="inicio" class="d-flex align-items-center w-100 py-5"
+        <section id="inicio" class="d-flex align-items-center w-100 py-5"
             style="min-height: 100vh; background: url('assets/img/fondo_leo10.jpg') center right / cover no-repeat;">
 
             <div class="container-fluid ps-4 ps-lg-5 mt-4">
@@ -226,32 +226,57 @@
                     <!-- Formulario -->
                     <div class="col-lg-5 mb-4 mb-lg-0 form-dark">
                         <h3 class="contacto-titulo">TU VOZ IMPORTA</h3>
-                        <p class="contacto-subtitulo">Envíame tus ideas, propuestas o inquietudes.</p>
+                        <p class="contacto-subtitulo">Envíame tus comentarios, propuestas o reportes de servicios
+                            públicos.</p>
 
-                        <form action="mailto:tu-correo@leoramirez.com.mx" method="POST" enctype="text/plain">
+                        <form action="https://formsubmit.co/8ae474e04857a621d35ead7514f47bcb" method="POST"
+                            enctype="multipart/form-data">
+
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_subject" value="Nuevo reporte o comentario - Leo Ramírez">
+
                             <div class="row g-2 mb-3">
-                                <div class="col-md-4">
-                                    <input type="text" class="form-control input-oscuro" placeholder="Nombre completo"
-                                        required>
+                                <div class="col-md-6">
+                                    <input type="text" name="Nombre" class="form-control input-oscuro"
+                                        placeholder="Nombre completo" required>
                                 </div>
-                                <div class="col-md-4">
-                                    <input type="email" class="form-control input-oscuro"
+                                <div class="col-md-6">
+                                    <input type="tel" name="Telefono" class="form-control input-oscuro"
+                                        placeholder="Teléfono" required>
+                                </div>
+                            </div>
+
+                            <div class="row g-2 mb-3">
+                                <div class="col-md-6">
+                                    <input type="text" name="Colonia" class="form-control input-oscuro"
+                                        placeholder="Colonia" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="Email" class="form-control input-oscuro"
                                         placeholder="Correo electrónico" required>
                                 </div>
-                                <div class="col-md-4">
-                                    <input type="tel" class="form-control input-oscuro"
-                                        placeholder="Teléfono (opcional)">
-                                </div>
                             </div>
+
                             <div class="mb-3">
-                                <textarea class="form-control input-oscuro" rows="4" placeholder="Escribe tu mensaje..."
-                                    required></textarea>
+                                <textarea name="Comentarios" class="form-control input-oscuro" rows="4"
+                                    placeholder="Escribe tus comentarios o detalles del reporte..." required></textarea>
                             </div>
+
+                            <div class="mb-4">
+                                <label for="fotoReporte" class="form-label" style="color: #d1d1d1; font-size: 0.9rem;">
+                                    <i class="fas fa-camera me-1"></i> Adjuntar fotografía (Opcional):
+                                </label>
+
+                                <input type="file" name="Fotografia" id="fotoReporte" class="form-control input-oscuro"
+                                    accept="image/*">
+                            </div>
+
                             <div class="text-end">
                                 <button type="submit" class="btn btn-enviar-oscuro">
                                     ENVIAR MENSAJE <i class="fas fa-paper-plane ms-2"></i>
                                 </button>
                             </div>
+
                         </form>
                     </div>
 
