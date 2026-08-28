@@ -497,9 +497,9 @@ section.resume-section .resume-section-content {
 /* Para pantallas grandes / monitores / Mac */
 @media (min-width: 1200px) {
   .mascota-flotante {
-    max-width: 320px;
+    max-width: 220px;
     /* Un tamaño proporcional para pantallas amplias */
-    right: 40px;
+    right: 0px;
   }
 }
 
