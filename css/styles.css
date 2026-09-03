@@ -83,7 +83,6 @@ section.resume-section .resume-section-content {
   letter-spacing: 1px;
 }
 
-/* Estado normal del menú */
 #sideNav .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.65) !important;
   font-weight: 500;
@@ -96,7 +95,6 @@ section.resume-section .resume-section-content {
   transition: all 0.3s ease;
 }
 
-/* Estado Hover y Activo del menú */
 #sideNav .navbar-nav .nav-link:hover,
 #sideNav .navbar-nav .nav-link.active {
   color: #ffffff !important;
@@ -115,7 +113,6 @@ section.resume-section .resume-section-content {
   outline-color: #d48a6e;
 }
 
-/* Imagen de perfil del Sidebar */
 .profile-img img {
   width: 180px !important;
   height: 180px !important;
@@ -494,11 +491,10 @@ section.resume-section .resume-section-content {
    8. MEDIA QUERIES RESPONSIVAS
    ========================================= */
 
-/* Para pantallas grandes / monitores / Mac */
+/*pantallas grandes / monitores / Mac */
 @media (min-width: 1200px) {
   .mascota-flotante {
     max-width: 220px;
-    /* Un tamaño proporcional para pantallas amplias */
     right: 0px;
   }
 }
@@ -573,7 +569,6 @@ section.resume-section .resume-section-content {
     display: block !important;
   }
 
-  /* Sidebar Header Toggler (Mobile) */
   #sideNav .navbar-toggler {
     border: none !important;
     box-shadow: none !important;
@@ -618,10 +613,8 @@ section.resume-section .resume-section-content {
 
   .panel-item:hover {
     flex: 1;
-    /* Cancela el flex ratio de desktop en mobile */
   }
 
-  /* Contacto Oscuro (Mobile) */
   .quote-box {
     border-right: none;
     border-bottom: 2px solid #8B0000;
@@ -704,7 +697,7 @@ section.resume-section .resume-section-content {
   }
 }
 
-/* Regla específica para Laptops intermedias */
+/* Laptops intermedias */
 @media (min-width: 992px) and (max-width: 1366px) {
 
   .titulo-card-campana {
@@ -830,7 +823,6 @@ section.resume-section .resume-section-content {
     height: 100%;
     background-size: cover;
     background-position: center;
-    /* Difuminado suave hacia la izquierda para mezclarse con el fondo */
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 100%);
     mask-image: linear-gradient(to right, transparent 0%, black 100%);
     opacity: 0.8;
@@ -841,7 +833,7 @@ section.resume-section .resume-section-content {
    ========================================= */
 .timeline-container {
     position: relative;
-    padding-left: 2rem; /* Espacio para la línea */
+    padding-left: 2rem; 
 }
 
 /* La línea vertical dorada */
@@ -850,26 +842,26 @@ section.resume-section .resume-section-content {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 8px; /* Posición exacta de la línea */
+    left: 8px; 
     width: 2px;
     background-color: #cca461;
 }
 
 .timeline-item {
     position: relative;
-    padding-bottom: 5rem; /* Separación entre bloques */
+    padding-bottom: 5rem; 
 }
 
 /* El círculo dorado de cada ítem */
 .timeline-dot {
     position: absolute;
-    left: -2rem; /* Ajuste para que caiga exactamente sobre la línea */
+    left: -2rem;
     top: 10px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background-color: #cca461;
-    border: 4px solid #fbfbfb; /* Borde del color de fondo para resaltar */
+    border: 4px solid #fbfbfb;
 }
 
 /* =========================================
@@ -891,9 +883,9 @@ section.resume-section .resume-section-content {
     position: absolute;
     top: 25px;
     left: 10%;
-    width: 80%; /* Limita el ancho exacto para que frene en el último icono */
+    width: 80%; 
     height: 2px;
-    background-color: #66001a; /* Color guinda actualizado */
+    background-color: #66001a; 
     z-index: 1;
 }
 .academic-icon {
@@ -927,7 +919,6 @@ section.resume-section .resume-section-content {
         width: 16px;
         height: 16px;
     }
-    /* Ocultar la línea horizontal en móviles porque no cabe, apilar los iconos */
     .academic-line-bg {
         display: none;
     }
@@ -939,10 +930,10 @@ section.resume-section .resume-section-content {
 
 .galeria-item {
     cursor: pointer;
-    background-color: #000; /* Fondo negro por si la imagen tarda en cargar */
+    background-color: #000;
 }
 
-/* Forzamos que las imágenes tengan la misma altura para mantener la cuadrícula perfecta */
+
 .galeria-item img {
     height: 280px;
     object-fit: cover;
@@ -954,20 +945,54 @@ section.resume-section .resume-section-content {
     transform: scale(1.08);
 }
 
-/* Capa superpuesta con degradado guinda */
+
 .galeria-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     height: 120px;
-    /* Degradado de guinda oscuro a transparente */
     background: linear-gradient(to top, rgba(102, 0, 26, 0.95), transparent);
-    opacity: 0; /* Oculto por defecto */
+    opacity: 0; 
     transition: opacity 0.3s ease;
 }
 
-/* Mostrar la capa al hacer hover */
 .galeria-item:hover .galeria-overlay {
     opacity: 1;
+}
+
+/* =========================================
+   CARRUSEL DE NOTICIAS
+   ========================================= */
+
+#carruselNoticias .carousel-indicators [data-bs-target] {
+    background-color: #66001a; 
+    opacity: 0.4;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+#carruselNoticias .carousel-indicators .active {
+    background-color: #cca461;
+    opacity: 1;
+}
+
+/* Oscurecer las flechas laterales para que resalten sobre cualquier imagen */
+.nav-carrusel-icono {
+    background-color: rgba(102, 0, 26, 0.7) !important; 
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%; 
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 220px !important;
+    }
 }
