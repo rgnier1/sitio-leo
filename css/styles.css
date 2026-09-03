@@ -502,7 +502,7 @@ section.resume-section .resume-section-content {
 /* Dispositivos Móviles y Tablets pequeñas */
 @media (max-width: 991px) {
   #inicio {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 1) 55%), url('../assets/img/leo_fondo5.jpg') right top / 120% auto no-repeat !important;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 1) 55%), url('../assets/img/leo_fondo4.jpg') right top / 120% auto no-repeat !important;
     background-color: #ffffff !important;
     flex-direction: column !important;
     justify-content: flex-end !important;
