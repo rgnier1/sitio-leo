@@ -996,3 +996,66 @@ section.resume-section .resume-section-content {
         height: 220px !important;
     }
 }
+
+
+
+/*Redes*/
+
+.btn-red-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #ffffff;
+    color: #212529;
+    padding: 16px 20px;
+    border-radius: 50px;
+    border: 1px solid #e0e0e0;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+
+.btn-red-social .icono-izq {
+    position: absolute;
+    left: 24px;
+    font-size: 1.3rem;
+    color: #66001a;
+    transition: color 0.3s ease;
+}
+
+
+.btn-red-social:hover {
+    background-color: #66001a;
+    border-color: #66001a;
+    color: #ffffff;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 10px rgba(102, 0, 26, 0.2);
+}
+
+.btn-red-social:hover .icono-izq {
+    color: #cca461 !important;
+}
+
+.btn-red-social.oficial {
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.btn-red-social.oficial:hover {
+    background-color: #cca461;
+    border-color: #cca461;
+    color: #1a1a1a;
+}
+
+.btn-red-social.oficial:hover .icono-izq {
+    color: #1a1a1a !important;
+}
+
+body.pagina-redes {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
