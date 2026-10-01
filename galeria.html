@@ -38,7 +38,6 @@
 
 <body>
 
-    <!-- Navegación Lateral -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="index.html">
             <span class="d-block d-lg-none">Momentos</span>
@@ -60,7 +59,6 @@
         </div>
     </nav>
 
-    <!-- Contenido Principal -->
     <div class="container-fluid p-0" style="background-color: #fbfbfb;">
 
         <section class="historia-encabezado p-4 p-lg-5 position-relative">
@@ -68,7 +66,7 @@
 
             <div class="row position-relative" style="z-index: 2;">
                 <div class="col-lg-7">
-                
+
                     <h1 class="display-4 fw-bold mt-2 mb-4"
                         style="color: #212529; font-family: 'Saira Extra Condensed', sans-serif; text-transform: uppercase;">
                         MOMENTOS QUE<br>CONSTRUYEN HISTORIA
@@ -81,90 +79,432 @@
             </div>
         </section>
 
-        <!-- Cuadrícula de Galería -->
+
         <section class="p-4 p-lg-5">
-            <div class="row g-4" id="galeria">
 
-                <!-- Foto 1 -->
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
-                        <img src="assets/img/gal1.jpg" class="img-fluid w-100" alt="Caminata con la comunidad">
+            
+            <div class="row g-4 mb-4">
 
-                        <div class="galeria-overlay d-flex align-items-end p-3">
-                            <h5 class="text-white fw-bold mb-0"
-                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px;">
-                                <i class="fas fa-map-marker-alt text-gold me-2"></i>
-                            </h5>
+                
+                <div class="col-12 col-md-8" onclick="abrirVisor('assets/img/gal2.jpeg', '')">
+                    <div
+                        class="galeria-item foto-destacada rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal2.jpeg" class="galeria-img" alt=""
+                            loading="lazy">
+
+                        
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
                         </div>
+
+                        
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-4">
+                            <h4 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-map-marker-alt text-gold me-2"></i>Caminata con la comunidad
+                            </h4>
+                        </div>-->
                     </div>
                 </div>
 
-                <!-- Foto 2 -->
-                <div class="col-sm-6 col-md-4 col-lg-4">
+                
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal4.jpeg', '')">
                     <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
-                        <img src="assets/img/gal2.jpg" class="img-fluid w-100" alt="Jornada de salud">
-                        <div class="galeria-overlay d-flex align-items-end p-3">
-                            <h5 class="text-white fw-bold mb-0"
-                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px;">
-                                <i class="fas fa-eye text-gold me-2"></i>
-                            </h5>
+                        <img src="assets/img/gal4.jpeg" class="galeria-img" alt="Jornada de salud" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
                         </div>
+
+                        
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-eye text-gold me-2"></i>Jornada de salud
+                            </h5>
+                        </div>-->
                     </div>
                 </div>
+            </div>
 
-                <!-- Foto 3 -->
-                <div class="col-sm-6 col-md-4 col-lg-4">
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal5.jpeg', '')">
                     <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
-                        <img src="assets/img/gal3.jpg" class="img-fluid w-100" alt="Apoyo a educación">
-                        <div class="galeria-overlay d-flex align-items-end p-3">
+                        <img src="assets/img/gal5.jpeg" class="galeria-img" alt=""
+                            loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
                             <h5 class="text-white fw-bold mb-0"
-                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px;">
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
                                 <i class="fas fa-lightbulb text-gold me-2"></i>Instalación de luminarias
                             </h5>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal3.jpeg', '')">
                     <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
-                        <img src="assets/img/gal4.jpg" class="img-fluid w-100" alt="Cursos y oficios">
-                        <div class="galeria-overlay d-flex align-items-end p-3">
-                            <h5 class="text-white fw-bold mb-0"
-                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px;">
-                                <i class="fas fa-tools text-gold me-2"></i>
-                            </h5>
+                        <img src="assets/img/gal3.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
                         </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-tools text-gold me-2"></i>Cursos y oficios
+                            </h5>
+                        </div>-->
                     </div>
                 </div>
 
-                <!-- Foto 5 -->
-                <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal6.jpeg', '')">
                     <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
-                        <img src="assets/img/gal23.jpg" class="img-fluid w-100" alt="Reunión con vecinos">
-                        <div class="galeria-overlay d-flex align-items-end p-3">
-                            <h5 class="text-white fw-bold mb-0"
-                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px;">
-                                <i class="fas fa-users text-gold me-2"></i>
-                            </h5>
+                        <img src="assets/img/gal6.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
                         </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
                     </div>
                 </div>
 
-                <!-- Foto 6 -->
-                <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal7.jpeg', '')">
                     <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
-                        <img src="assets/img/gal6.jpg" class="img-fluid w-100" alt="Seguridad pública">
-                        <div class="galeria-overlay d-flex align-items-end p-3">
-                            <h5 class="text-white fw-bold mb-0"
-                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px;">
-                                <i class="fas fa-lightbulb text-gold me-2"></i>
-                            </h5>
+                        <img src="assets/img/gal7.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
                         </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
                     </div>
                 </div>
 
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal23.jpeg', '')">
+                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal23.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal23.jpg', '')">
+                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal23.jpg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal8.jpeg', '')">
+                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal8.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal9.jpeg', '')">
+                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal9.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal10.jpeg', '')">
+                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal10.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal11.jpeg', '')">
+                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal11.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal12.jpeg', '')">
+                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal12.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal13.jpeg', '')">
+                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal13.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal14.jpeg', '')">
+                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal14.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal15.jpeg', '')">
+                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal15.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal16.jpeg', '')">
+                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal16.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal17.jpeg', '')">
+                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal17.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal18.jpeg', '')">
+                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal18.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal19.jpeg', '')">
+                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal19.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal20.jpeg', '')">
+                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal20.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal21.jpeg', '')">
+                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal21.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" onclick="abrirVisor('assets/img/gal22.jpeg', '')">
+                    <div class="galeria-item rounded-4 overflow-hidden shadow-sm position-relative h-100">
+                        <img src="assets/img/gal22.jpeg" class="galeria-img" alt="" loading="lazy">
+
+                        <div class="lupa-overlay text-white">
+                            <i class="fas fa-search-plus fa-3x" style="color: #cca461;"></i>
+                        </div>
+
+                        <!--<div class="info-overlay position-absolute bottom-0 start-0 w-100 d-flex align-items-end p-3">
+                            <h5 class="text-white fw-bold mb-0"
+                                style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9);">
+                                <i class="fas fa-users text-gold me-2"></i>Reunión con vecinos
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
             </div>
         </section>
+
+        <div class="modal fade" id="visorFotografico" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-header border-0 pb-0 justify-content-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar" style="filter: invert(1) grayscale(100%) brightness(200%);"></button>
+                    </div>
+
+                    <div class="modal-body text-center pt-2">
+                        <img id="imgModalCompleta" src="" class="img-fluid rounded shadow" alt="Vista completa" style="max-height: 80vh; object-fit: contain;">
+                        <p id="textoModalFoto" class="text-white mt-3 mb-0 fs-4" style="font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 1px;"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section class="py-4 text-center text-white" style="background-color: #66001a;">
             <div class="container">
